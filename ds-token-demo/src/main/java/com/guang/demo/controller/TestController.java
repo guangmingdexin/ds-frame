@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 //@RequestMapping("/ext/ds")
 public class TestController {
 
-    @GetMapping("/ext/ds/user/login")
+    @GetMapping("/ext/login")
     public String login() {
 
         return "用户登录！";

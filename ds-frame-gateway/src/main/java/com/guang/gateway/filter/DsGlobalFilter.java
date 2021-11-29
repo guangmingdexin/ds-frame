@@ -1,10 +1,7 @@
 package com.guang.gateway.filter;
 
-import com.guang.dstoken.core.ds.DsUtil;
-import com.guang.dstoken.core.router.DsRouter;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
-import org.springframework.stereotype.Component;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
@@ -21,13 +18,13 @@ public class DsGlobalFilter implements GlobalFilter {
         // 1.获取请求头中的 token
         // 2.鉴权
         // 登录校验 -- 拦截所有路由，并排除/user/doLogin 用于开放登录
-        DsRouter.match("/**", "/user/doLogin", r -> DsUtil.checkLogin());
-
-        // 权限认证 -- 不同模块, 校验不同权限
-        DsRouter.match("/user/**", r -> DsUtil.checkPermission("user"));
-        DsRouter.match("/admin/**", r -> DsUtil.checkPermission("admin"));
-        DsRouter.match("/goods/**", r -> DsUtil.checkPermission("goods"));
-        DsRouter.match("/orders/**", r -> DsUtil.checkPermission("orders"));
+//        DsRouter.match("/**", "/user/doLogin", r -> DsUtil.checkLogin());
+//
+//        // 权限认证 -- 不同模块, 校验不同权限
+//        DsRouter.match("/user/**", r -> DsUtil.checkPermission("user"));
+//        DsRouter.match("/admin/**", r -> DsUtil.checkPermission("admin"));
+//        DsRouter.match("/goods/**", r -> DsUtil.checkPermission("goods"));
+//        DsRouter.match("/orders/**", r -> DsUtil.checkPermission("orders"));
 
         return chain.filter(exchange);
     }
