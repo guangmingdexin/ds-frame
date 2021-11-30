@@ -4,4 +4,9 @@ server:
 spring:
   application:
     name: test
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ds-guangming
+    password: fWwFwSXb3WTnTtrN
 

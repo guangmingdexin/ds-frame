@@ -1,4 +1,4 @@
-package com.guang.demo.base;
+package com.guang.demo.mapper.base;
 
 /**
  *

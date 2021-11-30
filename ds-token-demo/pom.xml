@@ -17,6 +17,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!-- 使用MySQL数据库-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
          <!--https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter-->
         <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-boot-starter -->
         <dependency>
@@ -24,6 +30,5 @@
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>3.4.3.4</version>
         </dependency>
-
     </dependencies>
 </project>
