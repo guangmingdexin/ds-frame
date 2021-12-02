@@ -14,7 +14,6 @@ public class TestController {
 
     @GetMapping("/ext/login")
     public String login() {
-
         return "用户登录！";
     }
 }
