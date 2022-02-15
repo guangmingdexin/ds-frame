@@ -26,6 +26,7 @@ public class DsGlobalFilter implements GlobalFilter {
 //        DsRouter.match("/goods/**", r -> DsUtil.checkPermission("goods"));
 //        DsRouter.match("/orders/**", r -> DsUtil.checkPermission("orders"));
 
+
         return chain.filter(exchange);
     }
 }

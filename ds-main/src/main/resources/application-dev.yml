@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: ds-guang
+  datasource:
+    url: jdbc:mysql://120.26.198.241:3306/ds-game?characterEncoding=utf8&characterSetResults=utf8&autoReconnect=true&failOverReadOnly=false&serverTimezone=GMT%2B8&useAffectedRows=true&useSSL=false&allowMultiQueries=true
+    username: ds-game
+    password: sWzyLz4NErPFefCx
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+server:
+  port: 9999

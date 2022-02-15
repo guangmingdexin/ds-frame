@@ -11,3 +11,9 @@ unpackage/
 
 .idea/
 .iml
+
+*.iml
+.cmd
+mvnw
+
+**.jar
