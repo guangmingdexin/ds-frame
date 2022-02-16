@@ -1,21 +1,16 @@
 package com.guang.provider.service.impl;
 
+import cn.dev33.satoken.stp.StpUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.guang.persistence.domain.SysUser;
 import com.guang.persistence.service.SysUserService;
 import com.guang.provider.ao.auth.AccountAo;
 import com.guang.provider.ao.auth.TokenAo;
-import com.guang.provider.bo.UserBo;
-import com.guang.provider.mapstruct.AuthConvert;
 import com.guang.provider.service.IAuthService;
 import com.guang.provider.vo.LoginVo;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.sql.Wrapper;
 
 /**
  * @author guangyong.deng
@@ -43,13 +38,14 @@ public class AuthService implements IAuthService {
 
         // 调用 ds-token 框架，生成一个 token 并返回
 
-        LoginVo loginVo = new LoginVo()
-                .setToken("123")
-                .setUid(user.getSysId())
-                .setRtoken("123");
+        if(user != null) {
+            StpUtil.login(user.getSysId());
+            return new LoginVo()
+                    .setToken(StpUtil.getTokenInfo().tokenValue)
+                    .setUid(user.getSysId())
+                    .setRtoken("123");
+        }
 
-
-
-        return loginVo;
+        return null;
     }
 }

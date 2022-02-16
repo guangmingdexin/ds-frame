@@ -14,19 +14,27 @@
     <description>统一网关处理</description>
 
     <dependencies>
-        <!--<dependency>-->
-            <!--<groupId>cn.learn.dev</groupId>-->
-            <!--<artifactId>ds-token-core</artifactId>-->
-            <!--<version>1.0</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>cn.learn.dev</groupId>-->
-            <!--<artifactId>ds-token-spring-boot-starter</artifactId>-->
-            <!--<version>1.0</version>-->
-        <!--</dependency>-->
+
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-gateway</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.guang.cloud</groupId>
+            <artifactId>ds-common-core</artifactId>
+            <version>1.0</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
         <!--<dependency>-->

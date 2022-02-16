@@ -28,6 +28,8 @@ public class UserService implements IUserService {
 
         SysUser user = sysUserService.getOne(query);
 
+        System.out.println("SysUser: " + user);
+
         return UserConvert.INSTANCE.doConvertBo(user);
     }
 }

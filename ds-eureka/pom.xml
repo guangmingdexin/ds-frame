@@ -8,8 +8,9 @@
         <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    
-    <artifactId>ds-main</artifactId>
+
+
+    <artifactId>ds-eureka</artifactId>
 
 
     <dependencies>
@@ -18,15 +19,11 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.guang.cloud</groupId>
-            <artifactId>ds-provider</artifactId>
-            <version>${application.version}</version>
-        </dependency>
-
-        <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
     </dependencies>
+
+
 
 </project>

@@ -1,0 +1,15 @@
+server:
+  port: 7000
+
+spring:
+  application:
+    name: eureka-server
+
+
+# 是否将自己注册到Eureka server中，默认为true
+eureka:
+  client:
+    register-with-eureka: false
+    serviceUrl:
+      defaultZone: http://localhost:${server.port}/eureka/
+    fetch-registry: false
