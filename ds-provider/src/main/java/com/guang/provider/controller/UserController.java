@@ -7,7 +7,6 @@ import com.guang.provider.router.UserRouterService;
 import com.guang.provider.service.impl.UserService;
 import com.guang.provider.vo.UserVo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -31,6 +30,11 @@ public class UserController implements UserRouterService {
             return ResponseVO.fail("用户不存在");
         }
         return ResponseVO.success(userVo);
+    }
+
+    @Override
+    public ResponseVO<UserVo> addUser() {
+        return null;
     }
 
 

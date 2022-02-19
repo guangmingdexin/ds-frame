@@ -20,6 +20,4 @@ public class UserQueryAo {
     private String userId;
 
 
-
-
 }

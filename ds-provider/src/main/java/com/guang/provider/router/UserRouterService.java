@@ -25,4 +25,7 @@ public interface UserRouterService {
      */
     @PostMapping("/ds-user/user")
     ResponseVO<UserVo> getUser(@Validated @RequestBody UserQueryAo query);
+
+
+    ResponseVO<UserVo> addUser();
 }
