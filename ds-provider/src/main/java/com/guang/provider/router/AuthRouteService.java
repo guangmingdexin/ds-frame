@@ -24,7 +24,6 @@ public interface AuthRouteService {
      * 登录
      * @param accountAo
      * @return
-     * @throws IOException
      */
     @PostMapping(value = "/ds-auth/login")
     ResponseVO<LoginVo> login(@RequestBody @Validated AccountAo accountAo);
@@ -39,11 +38,12 @@ public interface AuthRouteService {
 
     /**
      * 认证
-     * @param token AccessToken
      * @return
      */
-//    @PostMapping(value = "/pt-unified-auth/auth")
-//    ResponseVO<Long> auth(@RequestBody TokenVo token);
+    @PostMapping(value = "/ds-auth/auth")
+    ResponseVO<Boolean> auth();
+
+
 
     /**
      * 刷新token(AccessToken和RefreshToken)
