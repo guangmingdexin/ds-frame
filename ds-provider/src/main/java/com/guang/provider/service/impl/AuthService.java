@@ -1,21 +1,15 @@
 package com.guang.provider.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.guang.persistence.domain.SysUser;
 import com.guang.persistence.service.SysUserService;
 import com.guang.provider.ao.auth.AccountAo;
 import com.guang.provider.ao.auth.TokenAo;
-import com.guang.provider.bo.UserBo;
-import com.guang.provider.mapstruct.AuthConvert;
 import com.guang.provider.service.IAuthService;
 import com.guang.provider.vo.LoginVo;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.sql.Wrapper;
 
 /**
  * @author guangyong.deng
