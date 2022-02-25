@@ -8,7 +8,6 @@ import com.guang.provider.service.impl.UserService;
 import com.guang.provider.vo.UserVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -16,7 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2022-02-15 17:19
  */
 @RestController
-@RequestMapping("/majiang")
 public class UserController implements UserRouterService {
 
     @Autowired

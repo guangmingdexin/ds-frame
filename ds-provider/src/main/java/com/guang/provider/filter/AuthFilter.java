@@ -25,6 +25,6 @@ public class AuthFilter implements WebMvcConfigurer {
             SaRouter.match("/user/**", r -> StpUtil.checkPermission("user"));
 
         })).addPathPatterns("/**")
-        .excludePathPatterns("/majiang/ds-auth/login");
+        .excludePathPatterns("/ds-auth/login");
     }
 }

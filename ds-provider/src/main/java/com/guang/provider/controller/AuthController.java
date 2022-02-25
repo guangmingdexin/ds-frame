@@ -21,7 +21,6 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2022-02-15 10:19
  */
 @RestController
-@RequestMapping("/majiang")
 public class AuthController implements AuthRouteService {
 
     @Autowired

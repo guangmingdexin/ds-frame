@@ -1,0 +1,68 @@
+2021-11-29 14:27:05.901 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2021-11-29 14:27:05.914 [main] INFO  com.guang.gateway.GateWayApplication - Starting GateWayApplication using Java 1.8.0_202 on CQPIDENGGY with PID 14948 (C:\Users\guangyong.deng\Desktop\project\ds-frame\ds-frame-gateway\target\classes started by guangyong.deng in C:\Users\guangyong.deng\Desktop\project\ds-frame)
+2021-11-29 14:27:05.915 [main] INFO  com.guang.gateway.GateWayApplication - No active profile set, falling back to default profiles: default
+2021-11-29 14:27:06.519 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=67fd4ec1-f52c-34ba-895a-c4aaa5a658b0
+2021-11-29 14:27:06.723 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2021-11-29 14:27:06.731 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2021-11-29 14:27:06.731 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-29 14:27:06.731 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-11-29 14:27:06.821 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-29 14:27:06.822 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 874 ms
+2021-11-29 14:27:06.910 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cloud.gateway.config.GatewayClassPathWarningAutoConfiguration$SpringMvcFoundOnClasspathConfiguration': Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.config.GatewayClassPathWarningAutoConfiguration$SpringMvcFoundOnClasspathConfiguration]: Constructor threw exception; nested exception is org.springframework.cloud.gateway.support.MvcFoundOnClasspathException
+2021-11-29 14:27:06.912 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-11-29 14:27:06.922 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-29 14:27:06.933 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Spring MVC found on classpath, which is incompatible with Spring Cloud Gateway.
+
+Action:
+
+Please set spring.main.web-application-type=reactive or remove spring-boot-starter-web dependency.
+
+2021-11-29 14:29:01.910 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2021-11-29 14:29:01.916 [main] INFO  com.guang.gateway.GateWayApplication - Starting GateWayApplication using Java 1.8.0_202 on CQPIDENGGY with PID 8304 (C:\Users\guangyong.deng\Desktop\project\ds-frame\ds-frame-gateway\target\classes started by guangyong.deng in C:\Users\guangyong.deng\Desktop\project\ds-frame)
+2021-11-29 14:29:01.917 [main] INFO  com.guang.gateway.GateWayApplication - No active profile set, falling back to default profiles: default
+2021-11-29 14:29:02.389 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=d53a2138-acf1-3951-a83a-1c6752f85535
+2021-11-29 14:29:03.005 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2021-11-29 14:29:03.006 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2021-11-29 14:29:03.006 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2021-11-29 14:29:03.006 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2021-11-29 14:29:03.006 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2021-11-29 14:29:03.006 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2021-11-29 14:29:03.006 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2021-11-29 14:29:03.006 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2021-11-29 14:29:03.006 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2021-11-29 14:29:03.006 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2021-11-29 14:29:03.006 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2021-11-29 14:29:03.006 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2021-11-29 14:29:03.006 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2021-11-29 14:29:03.662 [main] INFO  o.s.boot.web.embedded.netty.NettyWebServer - Netty started on port 8081
+2021-11-29 14:29:04.029 [main] INFO  com.guang.gateway.GateWayApplication - Started GateWayApplication in 2.675 seconds (JVM running for 3.364)
+2021-11-29 14:30:20.763 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2021-11-29 14:30:20.781 [main] INFO  com.guang.gateway.GateWayApplication - Starting GateWayApplication using Java 1.8.0_202 on CQPIDENGGY with PID 8128 (C:\Users\guangyong.deng\Desktop\project\ds-frame\ds-frame-gateway\target\classes started by guangyong.deng in C:\Users\guangyong.deng\Desktop\project\ds-frame)
+2021-11-29 14:30:20.781 [main] INFO  com.guang.gateway.GateWayApplication - No active profile set, falling back to default profiles: default
+2021-11-29 14:30:21.353 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=d53a2138-acf1-3951-a83a-1c6752f85535
+2021-11-29 14:30:22.104 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2021-11-29 14:30:22.104 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2021-11-29 14:30:22.104 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2021-11-29 14:30:22.104 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2021-11-29 14:30:22.104 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2021-11-29 14:30:22.104 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2021-11-29 14:30:22.104 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2021-11-29 14:30:22.104 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2021-11-29 14:30:22.104 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2021-11-29 14:30:22.104 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2021-11-29 14:30:22.104 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2021-11-29 14:30:22.105 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2021-11-29 14:30:22.105 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2021-11-29 14:30:22.707 [main] INFO  o.s.boot.web.embedded.netty.NettyWebServer - Netty started on port 8081
+2021-11-29 14:30:23.074 [main] INFO  com.guang.gateway.GateWayApplication - Started GateWayApplication in 2.85 seconds (JVM running for 3.547)
+2021-11-29 14:30:35.359 [reactor-http-nio-2] INFO  com.guang.gateway.controller.GateWayController - info

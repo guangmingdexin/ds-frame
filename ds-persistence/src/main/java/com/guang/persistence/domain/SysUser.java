@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Getter;
+import lombok.ToString;
 
 /**
  *
@@ -17,6 +18,7 @@ import lombok.Getter;
  */
 @Getter
 @TableName(value ="sys_user")
+@ToString
 public class SysUser extends BaseVO {
 
     @TableId(type = IdType.UUID, value = "sys_id")
