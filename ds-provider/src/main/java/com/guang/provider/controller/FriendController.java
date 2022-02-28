@@ -6,7 +6,6 @@ import com.guang.provider.router.FriendRouteService;
 import com.guang.provider.service.impl.FriendService;
 import com.guang.provider.vo.FriendVo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
