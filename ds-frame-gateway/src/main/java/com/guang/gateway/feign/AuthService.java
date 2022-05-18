@@ -3,6 +3,7 @@ package com.guang.gateway.feign;
 import com.common.core.web.domain.ResponseVO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PostMapping;
 
 /**
@@ -12,8 +13,8 @@ import org.springframework.web.bind.annotation.PostMapping;
  * @author guangyong.deng
  * @date 2022-02-16 10:56
  */
-@FeignClient(name = "api-gateway")
-@Component
+@FeignClient(name = "auth-service")
+@Service
 public interface AuthService {
 
     /**
@@ -22,7 +23,7 @@ public interface AuthService {
      *
      * @return 是否能够访问
      */
-    @PostMapping(value = "/ds-auth/auth")
+    @PostMapping(value = "/api/auth")
     ResponseVO<Boolean> auth();
 
 

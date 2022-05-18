@@ -10,10 +10,10 @@ spring:
       #路由id
       - id: user-service-route
         #代理的服务地址
-        uri: http://127.0.0.1:9000, http://127.0.0.1:9999
+        uri: http://127.0.0.1:9000, http://127.0.0.1:9999, http://127.0.0.1:9998, http://127.0.0.1:9997
         #路由断言
         predicates:
-        - Path=/ext/**, /majiang/ds-user/**
+        - Path=/ext/**, /api/**
 
 
 eureka:

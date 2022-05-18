@@ -7,11 +7,12 @@
     <modules>
         <module>ds-frame-gateway</module>
         <module>ds-token-demo</module>
-        <module>ds-oauth2-demo</module>
         <module>ds-persistence</module>
         <module>ds-common</module>
         <module>ds-main</module>
         <module>ds-eureka</module>
+        <module>ds-file</module>
+        <module>ds-auth</module>
     </modules>
 
 
@@ -20,7 +21,7 @@
     <packaging>pom</packaging>
 
 
-    <version>${application.version}</version>
+    <version>1.0</version>
     <name>ds-frame</name>
     <description>游戏服务模块</description>
 
@@ -35,7 +36,6 @@
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>

@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: file-service
+  datasource:
+#    url: jdbc:mysql://120.26.198.241:3306/ds-game?characterEncoding=utf8&characterSetResults=utf8&autoReconnect=true&failOverReadOnly=false&serverTimezone=GMT%2B8&useAffectedRows=true&useSSL=false&allowMultiQueries=true
+    url: jdbc:mysql://localhost:3306/ds_sys?characterEncoding=utf8&characterSetResults=utf8&autoReconnect=true&failOverReadOnly=false&serverTimezone=GMT%2B8&useAffectedRows=true&useSSL=false&allowMultiQueries=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jackson:
+    default-property-inclusion: non_null
+  mvc:
+    static-path-pattern: /**
+  resources:
+    static-locations: file:D://avatar
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+
+
+server:
+  port: 9998
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka/
+
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

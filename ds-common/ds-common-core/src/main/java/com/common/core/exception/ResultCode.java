@@ -19,6 +19,12 @@ public enum ResultCode {
     SUCCESS("200","请求成功"),
     FAIL("500", "服务器内部错误"),
 
+    UNAUTHORIZED("403", "权限不足"),
+
+    OPERATION_FAIL("400", "操作失败"),
+
+
+
     /**
      * 公共异常
      */
@@ -28,6 +34,9 @@ public enum ResultCode {
      * 用户模块
      */
     USER_ERROR("101000", "用户模块发生错误"),
+
+
+
     ;
     private String code;
 

@@ -1,0 +1,65 @@
+2022-04-21 13:51:09.515 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2022-04-21 13:51:12.745 [main] INFO  com.guang.gateway.GateWayApplication - No active profile set, falling back to default profiles: default
+2022-04-21 13:51:14.159 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=52a5246d-9830-3dfc-a3a5-877926e3ccf1
+2022-04-21 13:51:14.183 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.guang.gateway.feign.AuthService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-21 13:51:14.274 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-21 13:51:14.277 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-21 13:51:14.282 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-21 13:51:15.993 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2022-04-21 13:51:15.993 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2022-04-21 13:51:15.993 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2022-04-21 13:51:15.993 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2022-04-21 13:51:15.993 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2022-04-21 13:51:15.993 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2022-04-21 13:51:15.993 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2022-04-21 13:51:15.993 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2022-04-21 13:51:15.993 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2022-04-21 13:51:15.993 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2022-04-21 13:51:15.994 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2022-04-21 13:51:15.994 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2022-04-21 13:51:15.994 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-04-21 13:51:16.430 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-21 13:51:16.430 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-21 13:51:16.438 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-21 13:51:16.438 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-21 13:51:18.156 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-04-21 13:51:19.666 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-04-21 13:51:21.868 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-04-21 13:51:23.279 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-04-21 13:51:23.282 [main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022-04-21 13:51:23.293 [main] WARN  o.s.c.c.l.r.ReactorLoadBalancerClientAutoConfiguration$ReactorLoadBalancerClientRibbonWarnLogger - You have RibbonLoadBalancerClient on your classpath. LoadBalancerExchangeFilterFunction that uses it under the hood will be used by default. Spring Cloud Ribbon is now in maintenance mode, so we suggest switching to ReactorLoadBalancerExchangeFilterFunction instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022-04-21 13:51:23.359 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2022-04-21 13:51:23.566 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2022-04-21 13:51:24.509 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2022-04-21 13:51:24.509 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2022-04-21 13:51:24.880 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2022-04-21 13:51:24.880 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2022-04-21 13:51:25.052 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-04-21 13:51:25.340 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2022-04-21 13:51:25.340 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2022-04-21 13:51:25.341 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2022-04-21 13:51:25.341 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2022-04-21 13:51:25.341 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2022-04-21 13:51:25.341 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2022-04-21 13:51:25.341 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2022-04-21 13:51:25.520 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2022-04-21 13:51:25.523 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2022-04-21 13:51:25.525 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-04-21 13:51:25.552 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1650520285527 with initial instances count: 3
+2022-04-21 13:51:25.553 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application API-GATEWAY with eureka with status UP
+2022-04-21 13:51:25.554 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1650520285554, current=UP, previous=STARTING]
+2022-04-21 13:51:25.557 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_API-GATEWAY/localhost:api-gateway:8081: registering service...
+2022-04-21 13:51:25.604 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_API-GATEWAY/localhost:api-gateway:8081 - registration status: 204
+2022-04-21 13:51:26.050 [main] INFO  o.s.boot.web.embedded.netty.NettyWebServer - Netty started on port(s): 8081
+2022-04-21 13:51:26.051 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8081
+2022-04-21 13:51:27.504 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-04-21 13:51:28.924 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-04-21 13:51:28.937 [main] INFO  com.guang.gateway.GateWayApplication - Started GateWayApplication in 23.08 seconds (JVM running for 25.44)
+2022-04-21 13:53:11.632 [SpringContextShutdownHook] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application API-GATEWAY with eureka with status DOWN
+2022-04-21 13:53:11.632 [SpringContextShutdownHook] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1650520391632, current=DOWN, previous=UP]
+2022-04-21 13:53:11.632 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_API-GATEWAY/localhost:api-gateway:8081: registering service...
+2022-04-21 13:53:11.652 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_API-GATEWAY/localhost:api-gateway:8081 - registration status: 204
+2022-04-21 13:53:13.780 [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2022-04-21 13:53:16.793 [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Unregistering ...
+2022-04-21 13:53:16.829 [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_API-GATEWAY/localhost:api-gateway:8081 - deregister  status: 200
+2022-04-21 13:53:16.869 [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient

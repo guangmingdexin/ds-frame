@@ -1,0 +1,47 @@
+spring:
+  application:
+    name: auth-service
+  datasource:
+#    url: jdbc:mysql://120.26.198.241:3306/ds-game?characterEncoding=utf8&characterSetResults=utf8&autoReconnect=true&failOverReadOnly=false&serverTimezone=GMT%2B8&useAffectedRows=true&useSSL=false&allowMultiQueries=true
+    url: jdbc:mysql://localhost:3306/ds_sys?characterEncoding=utf8&characterSetResults=utf8&autoReconnect=true&failOverReadOnly=false&serverTimezone=GMT%2B8&useAffectedRows=true&useSSL=false&allowMultiQueries=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jackson:
+    default-property-inclusion: non_null
+
+server:
+  port: 9997
+
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka/
+
+
+
+sa-token:
+  # token名称 (同时也是cookie名称)
+  token-name: TOKEN
+  # token有效期，单位s 默认30天, -1代表永不过期
+  timeout: 3600
+  # token临时有效期 (指定时间内无操作就视为token过期) 单位: 秒
+  activity-timeout: 1800
+  # token风格
+  token-style: simple-uuid
+  #
+  is-concurrent: false
+  #
+  is-share: false
+  #
+  is-log: false
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+
+

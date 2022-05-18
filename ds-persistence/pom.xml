@@ -18,10 +18,17 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>${mybatis-plus.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.guang.cloud</groupId>
+            <artifactId>ds-common-core</artifactId>
+            <version>1.0</version>
         </dependency>
     </dependencies>
 

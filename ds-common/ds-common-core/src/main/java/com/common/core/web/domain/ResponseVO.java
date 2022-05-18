@@ -2,8 +2,12 @@ package com.common.core.web.domain;
 
 
 import com.common.core.exception.ResultCode;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
 
 /**
  * 返回给前端的封装对象
@@ -13,7 +17,9 @@ import lombok.Data;
  **/
 @Data
 @Builder
-public class ResponseVO<T> {
+@NoArgsConstructor
+@AllArgsConstructor
+public class ResponseVO<T> implements Serializable {
     /**
      * 状态编码
      */
@@ -21,7 +27,7 @@ public class ResponseVO<T> {
     /**
      * 返回数据
      */
-    private T data;
+    private T result;
     /**
      * 返回消息
      */
@@ -31,7 +37,7 @@ public class ResponseVO<T> {
         return ResponseVO.<T>builder()
                 .code(ResultCode.SUCCESS.getCode())
                 .msg(ResultCode.SUCCESS.getMessage())
-                .data(data)
+                .result(data)
                 .build();
     }
 
@@ -46,6 +52,15 @@ public class ResponseVO<T> {
         return ResponseVO.<T>builder()
                 .code(ResultCode.FAIL.getCode())
                 .msg(msg)
+                .build();
+    }
+
+
+    public static <T> ResponseVO fail(ResultCode code) {
+
+        return ResponseVO.<T>builder()
+                .code(code.getCode())
+                .msg(code.getMessage())
                 .build();
     }
 

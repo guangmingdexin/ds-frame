@@ -2,6 +2,8 @@ package com.guang.main.exception;
 
 import com.common.core.web.domain.ResponseVO;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
@@ -10,8 +12,16 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
  * @date 2022-02-16 13:39
  */
 @RestControllerAdvice
+@CrossOrigin("*")
 @Slf4j
 public class CommonExceptionHandler {
+
+
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseVO<String> argumentExceptionHandler(MethodArgumentNotValidException e) {
+        System.out.println("bindResult: ---" + e.getBindingResult());
+        return ResponseVO.fail(e.getMessage());
+    }
 
 
     /**

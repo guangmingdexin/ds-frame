@@ -40,11 +40,13 @@ public class DsGlobalFilter implements GlobalFilter {
         // 1.首先校验请求是否完整，是否有 token，uId
         HttpHeaders headers = exchange.getRequest().getHeaders();
 
-        if(headers.containsKey(Constant.TOKEN_NAME) && headers.containsKey(Constant.UID)) {
+        System.out.println(exchange.getRequest().getURI());
+
+        if(headers.containsKey(Constant.TOKEN_NAME) ) {
 
             ResponseVO<Boolean> auth = authService.auth();
 
-            if(auth.getData()) {
+            if(auth.getResult()) {
                 return chain.filter(exchange);
             }
         }
